@@ -12,12 +12,28 @@ Instead, copy the line you wish to change, paste it in your forum's `config/conf
 
 ## Custom CSS
 
-You may wish to apply some custom CSS styles to your forum without wanting to go to the trouble of [creating a new skin](). You can do so by adding your custom CSS to the `config/custom.css` file. If this file is not empty, esoTalk will automatically load it in each page.
+You may wish to apply some custom CSS styles to your forum without wanting to go to the trouble of [creating a new skin](/docs/skins). You can do so by adding your custom CSS to the `config/custom.css` file. If this file is not empty, esoTalk will automatically load it in each page.
 
 ## Friendly URLs
 
-Nginx support: Add this to your host configuration:
+esoTalk supports three forms of URLs:
 
-  location / {
-            try_files $uri $uri/ /index.php?$args;
-    }
+| $config["esoTalk.urls.friendly"] | $config["esoTalk.urls.rewrite"] | URL format |
+| --- | --- | --- |
+| `false` | `false` | forum.com/?p=member/123 |
+| `true` | `false` | forum.com/index.php/member/123 |
+| `true` | `true` | forum.com/member/123 |
+
+The third option requires your webserver to rewrite URLs to index.php. If you're using Apache and mod_rewrite is enabled, the esoTalk installer will automatically create a .htaccess file for you. If you're using another webserver, you'll need to manually configure URL rewriting.
+
+### Nginx
+
+	location / {
+		try_files $uri $uri/ /index.php/$args;
+	}
+	
+### Lighttpd
+
+	url.rewrite-if-not-file = (
+		"^(.*)$" => "index.php/$1"
+	)

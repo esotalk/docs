@@ -1,6 +1,6 @@
 # Configuration
 
-As outlined in [Getting Started → Configuration](), the configuration settings for an esoTalk installation are stored in the `core/config.defaults.php` and `config/config.php` files, with values defined in the latter taking precedence.
+As outlined in [Getting Started → Configuration](/docs/configuration), the configuration settings for an esoTalk installation are stored in the `core/config.defaults.php` and `config/config.php` files, with values defined in the latter taking precedence.
 
 The esoTalk framework provides ways to easily access the values of these configuration settings, and to write new values to the installation's `config/config.php` file.
 
