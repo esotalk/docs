@@ -11,12 +11,12 @@ esoTalk is built upon a pseudo-framework tailored specifically to suit its needs
 <a name="et"></a>
 ## ET
 
-The center of esoTalk's framework is an important class called **ET**. This class has [numerous static functions and properties]() that serve as a central way to access various things which are needed around the application, such as singletons and configuration values.
+The center of esoTalk's framework is an important class called **ET**. This class has [numerous static functions and properties](/api/class-ET.html) that serve as a central way to access various things which are needed around the application, such as singletons and configuration values.
 
 <a name="creating-objects"></a>
 ## Creating Objects
 
-**ETFactory** is a class which facilitates the instantiation of new objects. Utility classes and controllers must be registered with the factory using the [`ETFactory::register`]() method, after which they can be instantiated using [`ETFactory::make`](). This enables plugins to replace default classes with their own custom versions; for more information, see [Plugins]().
+**ETFactory** is a class which facilitates the instantiation of new objects. Utility classes and controllers must be registered with the factory using the [`ETFactory::register`](/api/class-ETFactory.html#_register) method, after which they can be instantiated using [`ETFactory::make`](/api/class-ETFactory.html#_make). This enables plugins to replace default classes with their own custom versions; for more information, see [Plugins](/docs/plugins).
 
 **Registering A Class With The Factory**
 

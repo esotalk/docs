@@ -1,4 +1,4 @@
-## Localization
+# Localization
 
 Whenever you output language to the page in esoTalk code, you should run it through the localization function, `T()`. This allows the application to be consistently translated into different languages. Default language definitions are stored in `addons/languages/English/definitions.php`.
 
@@ -15,7 +15,7 @@ The `T` function accepts two arguments: (1) the string to translate, and (2) a d
 > The `T()` function is an alias for `ET::translate()`.
 
 <!-- -->
-> Localization can also be performed in JavaScript using an identical `T()` function. For more information on how this works, see [JavaScript]().
+> Localization can also be performed in JavaScript using an identical `T()` function. For more information on how this works, see [JavaScript](/docs/javascript#data).
 
 Default values can also be defined using the `ET::define` method. They will only be used as a fallback if a definition does not exist in the current language, unless a third parameter is set to `true`.
 

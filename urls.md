@@ -6,7 +6,7 @@
 <a name="pages"></a>
 ## Linking To Pages
 
-To accommodate for different URL structures (i.e. friendly URLs and mod_rewrite), all hyperlinks should be created using the `URL` function. Given a request path, this function will construct a relative or absolute URL which can be used to link to a page in esoTalk.
+To accommodate for different URL structures (i.e. [friendly URLs](/docs/configuration#friendly-urls) and mod_rewrite), all hyperlinks should be created using the `URL` function. Given a request path, this function will construct a relative or absolute URL which can be used to link to a page in esoTalk.
 
 **Constructing A URL**
 

@@ -7,7 +7,7 @@
 
 ## Introduction
 
-In esoTalk, **controllers** are responsible for processing input and sending a response back to the browser. Following on from the [Request Lifecycle](), the basic process through which this is achieved is as follows:
+In esoTalk, **controllers** are responsible for processing input and sending a response back to the browser. Following on from the [Request Lifecycle](/docs/framework#request-lifecycle), the basic process through which this is achieved is as follows:
 
 1. **The request string is parsed.** (the “conversation/edit/123″ part of “http://esotalk.org/forum/conversation/edit/123″)
 	- The first part maps to the *controller*.
@@ -36,9 +36,9 @@ In esoTalk, **controllers** are responsible for processing input and sending a r
 <a name="rendering-views"></a>
 ## Rendering Views
 
-**Views** contain the HTML of esoTalk, separating the controller logic from the presentation logic. The ETController class provides functions to easily include and output views.
+**Views** contain the HTML of esoTalk, separating the controller logic from the presentation logic. The [ETController](/api/class-ETController.html) class provides functions to easily include and output views.
 
-The ETController::render function takes the name of a view as an argument and, by default, passes the contents of this view to the master "layout" view (located at `core/views/default.master.php`.)
+The [ETController::render](/api/class-ETController.html#_render) function takes the name of a view as an argument and, by default, passes the contents of this view to the master "layout" view (located at `core/views/default.master.php`.)
 
 **Rendering A View**
 
@@ -78,7 +78,7 @@ The default response type (`RESPONSE_TYPE_DEFAULT`) renders the specified view w
 
 ### View
 
-Sometimes you may wish to retrieve only the contents of the specific view being rendered, without the master view around it (for example, when displaying a [Sheet]() with XMLHTTPRequest.) This is possible with the "view" response type (`RESPONSE_TYPE_VIEW`).
+Sometimes you may wish to retrieve only the contents of the specific view being rendered, without the master view around it (for example, when displaying a [Sheet](/docs/javascript#sheets) with XMLHTTPRequest.) This is possible with the "view" response type (`RESPONSE_TYPE_VIEW`).
 
 **Example:** <http://esotalk.org/forum/conversation/index.view/3>
 

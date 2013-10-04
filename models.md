@@ -2,7 +2,7 @@
 
 In esoTalk, **models** do not follow the convention of being a direct representation of an object in the database. Rather, models simply provide methods to conveniently perform operations on data in the database.
 
-All models extend the **ETModel** class which provides basic functions common to all types of data. Model classes specific to different types of data (such as *ETConversationModel* and *ETMemberModel*) provide additional functions to manipulate that data.
+All models extend the **ETModel** class which provides [basic functions](/api/class-ETModel.html) common to all types of data. Model classes specific to different types of data (such as *ETConversationModel* and *ETMemberModel*) provide additional functions to manipulate that data.
 
 When extending ETModel, the `parent::__construct` method should be called with the name of the table that the model operates on and optionally the table's primary key (defaults to `[table]Id`.)
 
@@ -23,16 +23,16 @@ There are models for most types of data included in esoTalk's core which provide
 
 | Class | Instance accessible via |
 | ------- | -------------------- |
-| [ETActivityModel]() | `ET::activityModel()` |
-| [ETChannelModel]() | `ET::channelModel()` |
-| [ETConversationModel]() | `ET::conversationModel()` |
-| [ETGroupModel]() | `ET::groupModel()` |
-| [ETMemberModel]() | `ET::memberModel()` |
-| [ETPostModel]() | `ET::postModel()` |
-| [ETSearchModel]() | `ET::searchModel()` |
-| [ETUpgradeModel]() | `ET::upgradeModel()` |
+| [ETActivityModel](/api/class-ETActivityModel.html) | `ET::activityModel()` |
+| [ETChannelModel](/api/class-ETChannelModel.html) | `ET::channelModel()` |
+| [ETConversationModel](/api/class-ETConversationModel.html) | `ET::conversationModel()` |
+| [ETGroupModel](/api/class-ETGroupModel.html) | `ET::groupModel()` |
+| [ETMemberModel](/api/class-ETMemberModel.html) | `ET::memberModel()` |
+| [ETPostModel](/api/class-ETPostModel.html) | `ET::postModel()` |
+| [ETSearchModel](/api/class-ETSearchModel.html) | `ET::searchModel()` |
+| [ETUpgradeModel](/api/class-ETUpgradeModel.html) | `ET::upgradeModel()` |
 
-Below are a few examples of how these models may be used in esoTalk. This is by no means an exhaustive list of the functionality provided by the core models; more information can be found in the [API Reference](), and in specific examples in the [Plugins]() documentation.
+Below are a few examples of how these models may be used in esoTalk. This is by no means an exhaustive list of the functionality provided by the core models; more information can be found in the [API Reference](/api), and in specific examples in the [Plugins](/docs/plugins) documentation.
 	
 **Updating A Member's Details**
 

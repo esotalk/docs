@@ -1,6 +1,9 @@
 # Database
 
-The **ETDatabase** instance is stored in the static $database property of the ET class. This object handles the database connection and runs queries.
+- [Constructing Queries](#queries)
+- [Schema](#schema)
+
+The **[ETDatabase](/api/class-ETDatabase.html)** instance is stored in the static $database property of the ET class. This object handles the database connection and runs queries.
 
 **Executing A MySQL Query**
 
@@ -10,11 +13,12 @@ The **ETDatabase** instance is stored in the static $database property of the ET
 
 	$id = ET::$database->lastInsertId();
 
+<a name="queries"></a>
 ## Constructing Queries
 
-esoTalk provides a class called **ETSQLQuery** which allows MySQL queries to be constructed easily and dynamically. This brings many benefits — most significantly, giving plugins the power to alter queries before they are executed.
+esoTalk provides a class called **[ETSQLQuery](/api/class-ETSQLQuery.html)** which allows MySQL queries to be constructed easily and dynamically. This brings many benefits — most significantly, giving plugins the power to alter queries before they are executed.
 
-An instance of the ETSQLQuery can be created using the `ET::SQL` method. Many methods are available on the ETSQLQuery class that allow the different parts of the MySQL query to be altered.
+An instance of the ETSQLQuery class can be created using the `ET::SQL` method. [Many methods](/api/class-ETSQLQuery.html) are available on the ETSQLQuery class that allow the different parts of the MySQL query to be altered.
 
 **Constructing A Simple SELECT Query**
 
@@ -52,7 +56,7 @@ Placeholders can be inserted into any component of the query. Data can then be b
 		->bind(":postIds", array(1, 2, 3))
 		->exec();
 
-The result returned by the `query` method of the ETDatabase object — and in turn, the `exec` method of an ETSQLQuery object — is a new instance of the **ETSQLResult**. This is a wrapper class with various functions that can be used to read the resultset.
+The result returned by the `query` method of the ETDatabase object — and in turn, the `exec` method of an ETSQLQuery object — is a new instance of the **[ETSQLResult](/api/class-ETSQLResult.html)**. This is a wrapper class with various functions that can be used to read the resultset.
 
 **Getting The Number Of Rows In The Resultset**
 
@@ -103,9 +107,10 @@ The ETSQLQuery class can also construct UPDATE, INSERT, and DELETE queries.
 		))
 		->exec();
 	
+<a name="schema"></a>
 ## Schema
 
-The **ETDatabaseStructure** class provides a way to easily manage and maintain the database schema without having to worry about writing complex `ALTER TABLE` queries specific to each upgrade. This class will automatically compare the current structure of the database to a defined schema, and perform the necessary operations to update the current structure so that it matches.
+The **[ETDatabaseStructure](/api/class-ETDatabaseStructure.html)** class provides a way to easily manage and maintain the database schema without having to worry about writing complex `ALTER TABLE` queries specific to each upgrade. This class will automatically compare the current structure of the database to a defined schema, and perform the necessary operations to update the current structure so that it matches.
 
 An ETDatabaseStructure instance is accessible via the `ETDatabase::structure` method. On this object, the structure of a table can be defined by chaining method calls, starting with the `table` method, and following with `column` and `key` methods. Finally, the `exec` method is used to execute the queries necessary to get the database structure up-to-date.
 

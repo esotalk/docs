@@ -8,7 +8,7 @@ The esoTalk framework provides ways to easily access the values of these configu
 
 	$title = C("esoTalk.forumTitle", "Default Title");
 
-> The `C()` function is an alias for `ET::config()`.
+> The `C()` function is an alias for [`ET::config()`](/api/class-ET.html#_config).
 
 **Writing New Configuration Values**
 

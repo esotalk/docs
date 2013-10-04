@@ -1,3 +1,9 @@
 # Roadmap
 
-Currently, there are no long-term plans for the direction of esoTalk's development. Given my occupation with university, the future of esoTalk will rely heavily on contributions and plugins from the community.
+## Version 1
+
+esoTalk continues to move towards stable release. From there, bug-fix releases will be made.
+
+## Version 2
+
+Version 2 of esoTalk will be completely redesigned, rebranded, rewritten from scratch using the [Laravel Framework](http://laravel.com). The only thing it will retain is esoTalk's core philosophy: to be fast, simple, and powerful. Development will begin in late 2013.

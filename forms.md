@@ -1,8 +1,14 @@
 # Forms
 
+- [Basic Usage](#basic-usage)
+- [Generating Elements](#generating-elements)
+- [Processing Input](#processing-input)
+- [Form Construction](#form-construction) 
+
+<a name="basic-usage"></a>
 ## Basic Usage
 
-The basic purpose of the **ETForm** class is to provide convenient methods for processing form data and outputting form HTML. An ETForm instance represents a complete form; properties can be set on it in the *controller*, and then methods can be used to output the form elements in the *view*.
+The basic purpose of the **[ETForm](/api/class-ETForm.html)** class is to provide convenient methods for processing form data and outputting form HTML. An ETForm instance represents a complete form; properties can be set on it in the *controller*, and then methods can be used to output the form elements in the *view*.
 
 **Creating A New Form Object**
 
@@ -20,9 +26,10 @@ Hidden inputs may be added to the form before it is opened. They will be outputt
 
 	$form->addHidden("memberId", 1);
 
+<a name="generating-elements"></a>
 ## Generating Elements
 
-The ETForm class has an abundance of methods to output all different types of form elements.
+The ETForm class has an [abundance of methods](/api/class-ETForm.html) to output all different types of form elements.
 
 **Generating Basic Input Elements**
 
@@ -62,6 +69,7 @@ Note that none of these methods allow you to specify the **default value** of th
 
 	$form->setValue("name", "Simon");
 
+<a name="processing-input"></a>
 ## Processing Input
 
 The ETForm class provides a method to check if a form has been submitted. There is automatic CSRF protection so you don't have to worry about it.
@@ -112,11 +120,12 @@ View:
 		$form->button("save", "Save name"),
 		$form->close();
 	
+<a name="form-construction"></a>
 ## Form Construction
 
 The ETForm class can also be used to dynamically construct forms containing multiple sections and fields. This is particularly useful in allowing plugins to easily extend forms.
 
-A form can contain multiple **sections**, and a section can contain multiple **fields**. A final argument can be specified to insert a section or a field at a certain position, in the same way as discussed in the [Menu]() documentation.
+A form can contain multiple **sections**, and a section can contain multiple **fields**. A final argument can be specified to insert a section or a field at a certain position, in the same way as discussed in the [Menu](/docs/menus) documentation.
 
 **Adding A Section**
 

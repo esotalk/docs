@@ -1,5 +1,8 @@
 # Configuration
 
+- [Custom CSS](#custom-css)
+- [Friendly URLs](#friendly-urls)
+
 esoTalk has many configurable options that allow you to get your forum working just the way you want. Some of the basic options can be set in the **Forum Settings** part of the Administration panel.
 
 Configuration options specific to your esoTalk installation are stored in the `config/config.php` file. The installer will create this file and fill out your database information, forum title, and other essential values.
@@ -10,10 +13,12 @@ Instead, copy the line you wish to change, paste it in your forum's `config/conf
 
 	$config["esoTalk.debug"] = true;
 
+<a name="custom-css"></a>
 ## Custom CSS
 
 You may wish to apply some custom CSS styles to your forum without wanting to go to the trouble of [creating a new skin](/docs/skins). You can do so by adding your custom CSS to the `config/custom.css` file. If this file is not empty, esoTalk will automatically load it in each page.
 
+<a name="friendly-urls"></a>
 ## Friendly URLs
 
 esoTalk supports three forms of URLs:

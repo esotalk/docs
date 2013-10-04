@@ -7,7 +7,7 @@
 - [Messages](#messages)
 - [Tooltips](#tooltips)
 
-> esoTalk's JavaScript is built on the [jQuery framework](), as well as a number of jQuery plugins.
+> esoTalk's JavaScript is built on the [jQuery framework](http://jquery.com), as well as a number of jQuery plugins.
 
 <a name="data"></a>
 ## Data
@@ -23,7 +23,7 @@ ETController provides a way to pass data to the page so that it will be easily a
 	
 	var conversationId = ET.conversationId; // 123
 	
-You can also conveniently add language definitions to be accessible via JavaScript using the `addJSLanguage` method. This method accepts unlimited arguments as language definition keys. Translation can then be performed in JavaScript using the `T` function, which works the same way as the [PHP function]().
+You can also conveniently add language definitions to be accessible via JavaScript using the `addJSLanguage` method. This method accepts unlimited arguments as language definition keys. Translation can then be performed in JavaScript using the `T` function, which works the same way as the [PHP function](/docs/localization).
 
 **Adding Language Definitions To Be Accessible Via JavaScript**
 
@@ -32,9 +32,9 @@ You can also conveniently add language definitions to be accessible via JavaScri
 <a name="ajax"></a>
 ## AJAX
 
-In the spirit of being fast and responsive, esoTalk is an AJAX-heavy application. esoTalk provides a wrapper around [jQuery's ajax method]() called `ETAjax`. This wrapper automatically adds essential data to every AJAX request (like the [session token]()), automates handling of various components that may be returned in an AJAX request (like messages and redirects), and handles disconnection errors (showing an error message and allowing the user to reattempt the failed AJAX request.)
+In the spirit of being fast and responsive, esoTalk is an AJAX-heavy application. esoTalk provides a wrapper around [jQuery's ajax method](http://api.jquery.com/jQuery.ajax/) called `ETAjax`. This wrapper automatically adds essential data to every AJAX request (like the [session token](/docs/security#csrf-protection)), automates handling of various components that may be returned in an AJAX request (like messages and redirects), and handles disconnection errors (showing an error message and allowing the user to reattempt the failed AJAX request.)
 
-To take full advantage of this functionality, you must request the [AJAX response type](). Simply append `.ajax` to the controller method in the URL. You can read more about response types in [Controllers]().
+To take full advantage of this functionality, you must request the [AJAX response type](/docs/controllers#response-types). Simply append `.ajax` to the controller method in the URL. You can read more about response types in [Controllers](/docs/controllers#response-types).
 
 **Making An AJAX Request**
 
@@ -47,7 +47,7 @@ To take full advantage of this functionality, you must request the [AJAX respons
 		}
 	});
 
-On top of the [options available to jQuery's ajax method](), you may specify the following options: 
+On top of the [options available to jQuery's ajax method](http://api.jquery.com/jQuery.ajax/), you may specify the following options: 
 
 | Option | Type | Description |
 | --- | --- | --- |
