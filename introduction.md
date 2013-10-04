@@ -12,6 +12,6 @@ esoTalk is developed by Toby Zerner in memory of his brother, Simon.
 
 I've put many hundreds of hours and a lot of love into developing and maintaining esoTalk. If you have benefitted from it, why not consider [donating some schrapnel](/donate)? #feedtoby
 
-## API
+## API Reference
 
-In addition to this documentation, the full [esoTalk API](/api) is documented online.
+In addition to this documentation, the full [esoTalk API Reference](/api) is available online.
