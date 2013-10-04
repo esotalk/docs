@@ -18,7 +18,7 @@ You may wish to apply some custom CSS styles to your forum without wanting to go
 
 esoTalk supports three forms of URLs:
 
-| $config["esoTalk.urls.friendly"] | $config["esoTalk.urls.rewrite"] | URL format |
+| esoTalk.urls.friendly | esoTalk.urls.rewrite | URL format |
 | --- | --- | --- |
 | `false` | `false` | forum.com/?p=member/123 |
 | `true` | `false` | forum.com/index.php/member/123 |
