@@ -31,6 +31,14 @@ esoTalk supports three forms of URLs:
 
 The third option requires your webserver to rewrite URLs to index.php. If you're using Apache and mod_rewrite is enabled, the esoTalk installer will automatically create a .htaccess file for you. If you're using another webserver, you'll need to manually configure URL rewriting.
 
+### Apache
+
+	<IfModule mod_rewrite.c>
+	RewriteEngine On
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteRule ^(.*)$ index.php/$1 [QSA,L]
+	</IfModule>
+
 ### Nginx
 
 	location / {

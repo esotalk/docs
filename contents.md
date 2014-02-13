@@ -9,6 +9,7 @@
 - [Installation](/docs/installation)
 - [Upgrading](/docs/upgrading)
 - [Configuration](/docs/configuration)
+- [Troubleshooting](/docs/debug)
 
 ### Framework
 
