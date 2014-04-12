@@ -29,14 +29,14 @@
 
 ### Plugins
 
-- Packaging
-- Development
-- Common Tasks
-- Members & Settings
-- Conversations
-- Activity & Notifications
-- Search
-- List of Events
+- [Packaging](/docs/plugins/packaging)
+- [Development](/docs/plugins/development)
+- [Common Tasks](/docs/plugins/common-tasks)
+- [Members & Settings](/docs/plugins/members)
+- [Conversations](/docs/plugins/conversations)
+- [Activity & Notifications](/docs/plugins/activity)
+- [Search](/docs/plugins/search)
+- [List of Events](/docs/plugins/events)
 
 ### Skins
 
