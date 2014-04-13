@@ -8,4 +8,4 @@ To upgrade esoTalk to the latest version, simply:
 
 ## Troubleshooting
 
-If you are having problems upgrading esoTalk, search for help on the [support forum](/forum).
+If you are having problems upgrading esoTalk, read the [Troubleshooting](/docs/debug) page.

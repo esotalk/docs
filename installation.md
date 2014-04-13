@@ -16,4 +16,4 @@ esoTalk has only been tested on **Apache** and **lighttpd**. If you encounter a 
 
 ## Troubleshooting
 
-If you are having problems installing esoTalk, search for help on the [support forum](/forum).
+If you are having problems installing esoTalk, read the [Troubleshooting](/docs/debug) page.
