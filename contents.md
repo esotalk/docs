@@ -29,7 +29,7 @@
 
 ### Plugins
 
-- [Packaging](/docs/plugins/packaging)
+- [Introduction](/docs/plugins/introduction)
 - [Development](/docs/plugins/development)
 - [Common Tasks](/docs/plugins/common-tasks)
 - [Members & Settings](/docs/plugins/members)
@@ -40,10 +40,10 @@
 
 ### Skins
 
-- Packaging
-- Development
+- [Introduction](/docs/skins/introduction)
+- [Development](/docs/skins/development)
 
 ### Languages
 
-- Packaging
-- Translation
+- [Introduction](/docs/languages/introduction)
+- [Translation](/docs/languages/translation)
