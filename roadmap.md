@@ -1,9 +1,5 @@
 # Roadmap
 
-## Version 1
+esoTalk is being *maintained*, but not actively developed, by [@tobscure](http://twitter.com/tobscure). Stability (bug-fixing) is the main goal of maintanence. I try to review [issues](http://github.com/esoTalk/esotalk/issues) and [pull requests](http://github.com/esoTalk/esotalk/pulls) regularly. Right now, I only develop new features and plugins for paying clients, and occasionally out of personal interest.
 
-esoTalk continues to move towards stable release. From there, bug-fix releases will be made.
-
-## Version 2
-
-Version 2 of esoTalk will be completely redesigned, rebranded, rewritten from scratch using the [Laravel Framework](http://laravel.com). The only thing it will retain is esoTalk's core philosophy: to be fast, simple, and powerful. Development will begin in late 2013.
+Please read this [blog post](/blog/faq.html) for information about the future of esoTalk.
