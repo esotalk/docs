@@ -24,26 +24,27 @@
 - [Forms](/docs/forms)
 - [Menus](/docs/menus)
 - [Messages](/docs/messages)
+- [Formatting](/docs/formatting)
 - [Security](/docs/security)
 - [JavaScript](/docs/javascript)
 
 ### Plugins
 
 - [Introduction](/docs/plugins/introduction)
-- [Development](/docs/plugins/development)
+- [Concepts](/docs/plugins/concepts)
 - [Common Tasks](/docs/plugins/common-tasks)
-- [Members & Settings](/docs/plugins/members)
+- [Members](/docs/plugins/members)
 - [Conversations](/docs/plugins/conversations)
-- [Activity & Notifications](/docs/plugins/activity)
+- [Activity](/docs/plugins/activity)
 - [Search](/docs/plugins/search)
 - [List of Events](/docs/plugins/events)
 
 ### Skins
 
 - [Introduction](/docs/skins/introduction)
-- [Development](/docs/skins/development)
+- [Concepts](/docs/skins/concepts)
+<!-- - [CSS Structure](/docs/skins/css) -->
 
 ### Languages
 
 - [Introduction](/docs/languages/introduction)
-- [Translation](/docs/languages/translation)

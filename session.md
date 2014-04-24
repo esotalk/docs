@@ -22,7 +22,7 @@ The session object is also the point of access for getting information about the
 
 **Getting A User's Preference**
 
-	$value = ET::$session->preference("key");
+	$value = ET::$session->preference("key", "default");
 	
 **Setting The User's Preferences**
 

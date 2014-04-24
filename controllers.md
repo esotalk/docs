@@ -1,9 +1,9 @@
 # Controllers & Views
 
 - [Introduction](#introduction)
-- [Rendering Views](#rendering-views)
+- [Rendering Views](#views)
 - [Response Types](#response-types)
-- [Asset Management](#asset-management)
+- [Asset Management](#assets)
 
 ## Introduction
 
@@ -33,7 +33,7 @@ In esoTalk, **controllers** are responsible for processing input and sending a r
 
 	ETFactory::registerController("foo", "FooController", "FooController.class.php");
 
-<a name="rendering-views"></a>
+<a name="views"></a>
 ## Rendering Views
 
 **Views** contain the HTML of esoTalk, separating the controller logic from the presentation logic. The [ETController](/api/class-ETController.html) class provides functions to easily include and output views.
@@ -113,7 +113,7 @@ This may return:
 
 	{"error":"Your login details were incorrect","view":"<form>...</form>"}
 
-<a name="asset-management"></a>
+<a name="assets"></a>
 ## Asset Management
 
 The `ETController` class provides many methods that can be used to manipulate the response. Most notably, it is very easy to add links to assets such as CSS and JavaScript files to the `<head>` of the master view.

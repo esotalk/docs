@@ -125,6 +125,21 @@ A sheet that contains a form can be submitted via AJAX so that the page doesn't 
 
 	}
 
+If the form's submission is a success, then there are two things that the controller may do to respond:
+
+* [Redirect]() to another page, or
+* NOT render the sheet view, which will cause the sheet to be closed.
+
+Of course, additional JSON data can be returned in the response, and you may like to handle this data. This can be done by passing another callback function as the final argument to `ETSheet.loadSheet`.
+
+**Processing Additional Data When Loading A Sheet**
+
+	ETSheet.loadSheet("exampleSheet", "controller/example.ajax", function() {
+		// ...
+	}, formData, function(data) {
+		if (data.example) alert(data.example);
+	});
+
 <a name="popups"></a>
 ## Popups
 

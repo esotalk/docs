@@ -1,7 +1,7 @@
 # Framework Overview
 
 - [ET](#et)
-- [Creating Objects](#creating-objects)
+- [Creating Objects](#factory)
 - [Request Lifecycle](#request-lifecycle)
 
 esoTalk is built upon a pseudo-framework tailored specifically to suit its needs. This allows the codebase to be efficient and concise. This section of the documentation covers the workings of this framework and its various components.
@@ -13,7 +13,7 @@ esoTalk is built upon a pseudo-framework tailored specifically to suit its needs
 
 The center of esoTalk's framework is an important class called **ET**. This class has [numerous static functions and properties](/api/class-ET.html) that serve as a central way to access various things which are needed around the application, such as singletons and configuration values.
 
-<a name="creating-objects"></a>
+<a name="factory"></a>
 ## Creating Objects
 
 **ETFactory** is a class which facilitates the instantiation of new objects. Utility classes and controllers must be registered with the factory using the [`ETFactory::register`](/api/class-ETFactory.html#_register) method, after which they can be instantiated using [`ETFactory::make`](/api/class-ETFactory.html#_make). This enables plugins to replace default classes with their own custom versions; for more information, see [Plugins](/docs/plugins).

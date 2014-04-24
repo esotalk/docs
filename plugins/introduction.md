@@ -17,12 +17,12 @@ A plugin has the following file structure:
 | File/Folder | Description |
 | -- | -- |
 | `ExamplePlugin/` | The name of the plugin in StudlyCase. |
-| `-- plugin.php` | The main plugin file, where all of the plugin's information and logic is located. |
-| `-- icon.png` | A 16x16 icon which is displayed on the Administration > Plugins page. |
-| `-- index.html` | An empty file to prevent the directory from being publicly listed. |
-| `-- resources/` | The plugin's publicly-accessible resources (CSS/JS files, images, etc.) |
-| `-- views/` | The plugin's views (see [Common Tasks]().) |
-| `-- ...` | Anything else you may need: class files, libraries, includes, etc. |
+| `--plugin.php` | The main plugin file, where all of the plugin's information and logic is located. |
+| `--icon.png` | A 16x16 icon which is displayed on the Administration > Plugins page. |
+| `--index.html` | An empty file to prevent the directory from being publicly listed. |
+| `--resources/` | The plugin's publicly-accessible resources (CSS/JS files, images, etc.) |
+| `--views/` | The plugin's views (see [Concepts](/docs/plugins/concepts#views).) |
+| `--...` | Anything else you may need: class files, libraries, includes, etc. |
 
 <a name="details"></a>
 ## Details
