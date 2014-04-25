@@ -145,3 +145,10 @@ Your model should extend the `ETModel` class to inherit [basic model functionali
 **Getting An Instance Of A Custom Model**
 
 	$model = ETFactory::make("exampleModel");
+
+You can access your plugin object (and thus its methods like `view` and `resource`) from within a controller or view through the `ET::$plugins` array.
+
+**Accessing The Plugin Object From Within A Controller**
+
+	$plugin = ET::$plugins["ExamplePlugin"];
+	$this->render($plugin->view("example"));
