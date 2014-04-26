@@ -41,7 +41,7 @@ The ETForm class has an [abundance of methods](/api/class-ETForm.html) to output
 
 	echo $form->select("size", array(
 		"S" => "Small",
-		"M" => "Medium"
+		"M" => "Medium",
 		"L" => "Large"
 	));
 	
