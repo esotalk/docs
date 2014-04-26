@@ -31,7 +31,7 @@ Skin details should be added to the `ET::$skinInfo` array at the top of `skin.ph
 
 **Defining Skin Details**
 
-	ET::$pluginInfo["ExampleSkin"] = array(
+	ET::$skinInfo["ExampleSkin"] = array(
 		"name"        => "Example Skin",
 		"description" => "An example skin.",
 		"version"     => "1.0",
