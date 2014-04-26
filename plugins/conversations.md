@@ -12,7 +12,7 @@ Labels are icons which represent the current state of a conversation, either glo
 Each label has a name, a condition, and an icon.
 
 * The name is used as the CSS class name (`.label-{name}`) when the label is rendered, as well as for translation (`T("label.{name}")`).
-* The condition is an SQL snippet that is evaluated to determine if a label applies to a conversation. Often a label's presence will simply correlate to the value of a boolean column on the either the `conversation` table (aliased as `c`) or `member_conversation` table (`s`). For example, the sticky label's condition is `c.sticky = 1`. 
+* The condition is an SQL snippet that is evaluated to determine if a label applies to a conversation. Often a label's presence will simply correlate to the value of a boolean column on the either the `conversation` table (aliased as `c`) or `member_conversation` table (`s`). For example, the sticky label's condition is `IF(c.sticky = 1, 1, 0)`. 
 * The icon is the class name of a [Font Awesome icon](http://fortawesome.github.io/Font-Awesome/3.2.1/icons/) (e.g. `icon-pushpin`).
 
 Labels must be registered statically to the `ETConversationModel` class. This can be done in the `init` method; the conversation model must be instantiated so that the class file is included.
@@ -24,7 +24,7 @@ Labels must be registered statically to the `ETConversationModel` class. This ca
 		ET::define("label.bookmarked", "Bookmarked");
 
 		ET::conversationModel(); // Load the conversation model so we can use the static class
-		ETConversationModel::addLabel("bookmarked", "s.bookmarked = 1", "icon-bookmark");
+		ETConversationModel::addLabel("bookmarked", "IF(s.bookmarked = 1, 1, 0)", "icon-bookmark");
 	}
 
 <a name="controls"></a>
