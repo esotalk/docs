@@ -57,7 +57,7 @@ Setting up a basic settings sheet for your plugin is easy. First, [define a `set
 	{
 		// Set up the settings form.
 		$form = ETFactory::make("form");
-		$form->action = URL("admin/plugins");
+		$form->action = URL("admin/plugins/settings/ExamplePlugin");
 		$form->setValue("description", C("plugin.ExamplePlugin.description"));
 
 		// If the form was submitted...
