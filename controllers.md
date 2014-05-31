@@ -9,12 +9,12 @@
 
 In esoTalk, **controllers** are responsible for processing input and sending a response back to the browser. Following on from the [Request Lifecycle](/docs/framework#request-lifecycle), the basic process through which this is achieved is as follows:
 
-1. **The request string is parsed.** (the “conversation/edit/123″ part of “http://esotalk.org/forum/conversation/edit/123″)
+1. **The request string is parsed.** (the "conversation/edit/123" part of "http://esotalk.org/forum/conversation/edit/123")
 	- The first part maps to the *controller*.
-	- The second part maps to the controller *method*, if it exists as a **non-inherited public** method of the controller class. Otherwise, we default to the “index” method.
+	- The second part maps to the controller *method*, prefixed with `action_`, if it exists. Otherwise, we default to the `action_index` method.
 	- Any subsequent parts map to *arguments* which are passed to the controller method.
 2. **The controller object is created.** The appropriate class is instantiated using the `ETFactory`.
-3. **The method and arguments are dispatched to the controller.** For “conversation/edit/123″, we will be calling the “edit” method of the “conversation” controller, passing “123″ as a function argument.
+3. **The method and arguments are dispatched to the controller.** For "conversation/edit/123", we will be calling the `action_edit` method of the "conversation" controller, passing "123" as a function argument.
 4. **The controller method processes input and sends a response**, usually using utility functions inherited from the `ETController` class.
 
 **Defining A Controller**
@@ -22,7 +22,7 @@ In esoTalk, **controllers** are responsible for processing input and sending a r
 	class FooController extends ETController {
 	
 		// Accessible via foo/index/Toby or simply foo/Toby
-		public function index($name = "")
+		public function action_index($name = "")
 		{
 			echo "Your name is ".($name ? $name : "Anonymous");
 		}
