@@ -17,3 +17,10 @@ If you keep getting *Page Not Found* errors whenever you try to navigate somewhe
 ## "Could not instantiate mail function"
 
 Make sure that your server is configured correctly to be able to send mail. If you don't know how to do that, try enabling and configuring the SMTP plugin included with esoTalk.
+
+## White Screen of Death
+
+If you're getting a white screen and nothing else, it's likely that PHP is encountering a fatal error before esoTalk has a chance to set up its error-handling mechanism. To investigate what's going on, set `display_errors` to `On` and `error_reporting` to `E_ALL` in your php.ini file. Alternatively, you can add the following to the top of index.php:
+
+    ini_set('display_errors', 'On');
+    error_reporting(E_ALL);
